@@ -31,7 +31,7 @@ for arg in argv[1:]:
     if not missing:
         print(" All scripts are in the json file")
     else:
-        print("There are " + str(len(missing)) + " scripts that are missing from " +str(arg)+":")
+        print("There are {0} scripts that are missing from {1}:".format(str(len(missing)), str(arg))
         print("\n".join(missing))
         status = 1
 exit(status)
